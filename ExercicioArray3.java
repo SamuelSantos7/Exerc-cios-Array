@@ -8,8 +8,8 @@ public class ExercicioArray3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		float valores [] [] = new float [3] [3];
+		float somavalor=0, mediavalor, somadiagonal=0;
 		int  l=0, c=0, cont=0;
-		
 		Scanner leia  = new Scanner(System.in);
 		
 		for(l=0;l<3;l++) {
@@ -18,7 +18,8 @@ public class ExercicioArray3 {
 			
 		System.out.println("\ndigite um valor : ");
 		valores[l][c] = leia.nextFloat();
-		
+		somavalor = somavalor + valores[l][c];
+			
 		if(valores[l][c]>10) {
 		
 			cont++;
@@ -29,7 +30,7 @@ public class ExercicioArray3 {
 		}
 		
 		
-		} System.out.println("\nOs valores maiores que 10 s„o  : "+cont );
+		} System.out.println("\nOs valores maiores que 10 s√£o  : "+cont );
 		
 	}   
 
